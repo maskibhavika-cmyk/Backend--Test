@@ -1,0 +1,50 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Dependencies
+**/node_modules/
+
+# Build files
+**/dist/
+
+# Environment variables
+**/.env
+
+# Logs
+*.log
+
+# Editor files
+.vscode/
+# Local practice / extra files
+my-project/
+package.json
+react-yt/my-project/
+react-yt/postcss.config.js
+react-yt/src/components/EV.css
+react-yt/src/components/EventHandling.jsx
+react-yt/src/components/EventPropagation.jsx
+react-yt/src/components/EventProps.jsx
+react-yt/src/components/Netflix.css
+react-yt/src/components/Netflix.module.css
+react-yt/tailwind.config.js
