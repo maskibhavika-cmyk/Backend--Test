@@ -44,8 +44,8 @@ const transactionCreateController = async (req, res) => {
          }
          
          // Category validation
-         if (!category || !category.trim()) {
-             return res.status(400).send({
+         if  ( !category || !category.trim()) {
+             return  res.status(400).send({
                  success: false,
                  message: "Category is required"
              });
@@ -61,8 +61,8 @@ const transactionCreateController = async (req, res) => {
          
          // Date validation
          if (!date || isNaN(new Date(date).getTime())) {
-             return res.status(400).send({
-                 success: false,
+             return  res.status(400).send({
+                 success:  false,
                  message: "Valid date is required"
              });
          }
