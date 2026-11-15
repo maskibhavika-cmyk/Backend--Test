@@ -10,7 +10,7 @@ const transactionCreateController = async (req, res) => {
         //     })
         // }
 
-        const { title, amount, type, category, expense, date } = req.body;
+        const  { title, amount, type, category, expense, date }  = req.body;
 
          // Title validation
          if (!title || !title.trim()) {
@@ -21,16 +21,16 @@ const transactionCreateController = async (req, res) => {
          }
          
          // Amount validation
-         if (!amount || Number(amount) <= 0) {
-             return res.status(400).send({
+         if  (!amount || Number(amount) <= 0) {
+             return  res.status(400).send({
                  success: false,
-                 message: "Amount must be greater than 0"
+                 message:  "Amount must be greater than 0"
              });
          }
          
          // Type validation
          if (!type) {
-             return res.status(400).send({
+             return  res.status(400).send({
                  success: false,
                  message: "Type is required"
              });
